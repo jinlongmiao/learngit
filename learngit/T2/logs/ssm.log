@@ -1,0 +1,14 @@
+[INFO] [2018-03-12 16:26:32][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a42bbf4: startup date [Mon Mar 12 16:26:32 CST 2018]; root of context hierarchy
+  [INFO] [2018-03-12 16:26:32][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+  [WARN] [2018-03-12 16:26:33][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.cn.uuu.IDao]' package. Please check your configuration.
+  [INFO] [2018-03-12 16:26:33][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+  [INFO] [2018-03-12 16:26:33][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [INFO] [2018-03-12 16:31:05][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a42bbf4: startup date [Mon Mar 12 16:31:05 CST 2018]; root of context hierarchy
+  [INFO] [2018-03-12 16:31:05][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+  [INFO] [2018-03-12 16:31:06][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+  [INFO] [2018-03-12 16:31:06][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [INFO] [2018-03-12 16:36:34][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a42bbf4: startup date [Mon Mar 12 16:36:34 CST 2018]; root of context hierarchy
+  [INFO] [2018-03-12 16:36:34][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [ApplicationContext.xml]
+  [INFO] [2018-03-12 16:43:02][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a42bbf4: startup date [Mon Mar 12 16:43:02 CST 2018]; root of context hierarchy
+  [INFO] [2018-03-12 16:43:02][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [ApplicationContext.xml]
+  

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miao.Dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.miao.PoJo.User" >
+    <id column="Id" property="id" jdbcType="INTEGER" />
+    <result column="APPId" property="appid" jdbcType="CHAR" />
+    <result column="secrt" property="secrt" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    Id, APPId, secrt
+  </sql>
+  <select id="selectByPrimaryKey" resultType="com.miao.PoJo.User" parameterType="java.lang.Integer" >
+    select * from useinfo
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from useinfo
+    where Id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.miao.PoJo.User" >
+    insert into useinfo (Id, APPId, secrt)
+    values (#{id,jdbcType=INTEGER}, #{appid,jdbcType=CHAR}, #{secrt,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.miao.PoJo.User" >
+    insert into useinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        Id,
+      </if>
+      <if test="appid != null" >
+        APPId,
+      </if>
+      <if test="secrt != null" >
+        secrt,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="appid != null" >
+        #{appid,jdbcType=CHAR},
+      </if>
+      <if test="secrt != null" >
+        #{secrt,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miao.PoJo.User" >
+    update useinfo
+    <set >
+      <if test="appid != null" >
+        APPId = #{appid,jdbcType=CHAR},
+      </if>
+      <if test="secrt != null" >
+        secrt = #{secrt,jdbcType=CHAR},
+      </if>
+    </set>
+    where Id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miao.PoJo.User" >
+    update useinfo
+    set APPId = #{appid,jdbcType=CHAR},
+      secrt = #{secrt,jdbcType=CHAR}
+    where Id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
