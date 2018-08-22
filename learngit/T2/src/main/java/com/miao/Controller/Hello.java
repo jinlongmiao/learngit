@@ -14,7 +14,7 @@ import com.miao.PoJo.User;
 public class Hello {
     @RequestMapping("/SayHello")   
     public String SayHello(Model model) {
-    	//��modelģ�͸�ֵ
+    	//yinaijing͸�ֵyinaijing͸�yinaijing͸�yinaijing͸�
         model.addAttribute("message", "Hello Spring MVC!");
         System.out.println(model.containsAttribute("message")); //�Ƿ�ɹ���ֵ
         return "Hello";
